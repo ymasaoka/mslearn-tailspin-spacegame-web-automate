@@ -20,7 +20,7 @@ variable "resource_group_location" {
 }
 
 variable "app_service_plan_name" {
-  default = "tailspin-space-game-asp-2"
+  default = "tailspin-space-game-asp-3"
   description = "The name of the app service plan"
 }
 
