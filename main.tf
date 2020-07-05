@@ -11,7 +11,7 @@ provider "azurerm" {
 }
 
 variable "resource_group_name" {
-  default = "tailspin-space-game-rg"
+  default = "tailspin-space-game-rg-3"
   description = "The name of the resource group"
 }
 
@@ -20,7 +20,7 @@ variable "resource_group_location" {
 }
 
 variable "app_service_plan_name" {
-  default = "tailspin-space-game-asp"
+  default = "tailspin-space-game-asp-2"
   description = "The name of the app service plan"
 }
 
@@ -48,7 +48,7 @@ resource "azurerm_app_service_plan" "spacegame" {
 
   sku {
     tier = "Basic"
-    size = "B1"
+    size = "F1"
   }
 }
 
